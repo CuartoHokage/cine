@@ -43,7 +43,7 @@ function deleteProduct(req, res){
 	})
 }
 
-function postProduct(id){
+function postProduct(req, res){
 	console.log('Post /api/product')
 	//console.log(res.body)
 

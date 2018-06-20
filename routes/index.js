@@ -6,8 +6,9 @@ const auth = require('../middlewares/auth')
 const userControllers= require('../controllers/user')
 
 api.get('/product', productControllers.getProducts)
-
 api.get('/product/:productID', productControllers.getProduct)
+//auth impedira que puedas ver sin estar logueado
+//api.get('/product/:productID',auth, productControllers.getProduct)
 
 api.post('/product', productControllers.postProduct)
 
